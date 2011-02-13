@@ -1,0 +1,7 @@
+.settings/
+bin/
+gen/
+dist/
+extras/
+assets/
+keystore/
