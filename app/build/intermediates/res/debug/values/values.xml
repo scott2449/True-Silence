@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Scott/AndroidstudioProjects/True-Silence/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="refresh_preference_names">
+		<item>5</item>
+		<item>10</item>
+		<item>15</item>
+	</string-array>
+    <string-array name="refresh_preference_values">
+		<item>300</item>
+		<item>600</item>
+		<item>900</item>
+	</string-array>
+    <!-- From: file:/C:/Users/Scott/AndroidstudioProjects/True-Silence/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black_trans">#bb000000</color>
+    <color name="white">#ffffff</color>
+    <!-- From: file:/C:/Users/Scott/AndroidstudioProjects/True-Silence/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">True Silence</string>
+    <string name="close_text">Close</string>
+    <string name="description">A simple widget that lets you COMPLETELY silence your android phone. Many manufacturers do not allow this with all volume streams and many other applications will only let you set one at a time. True Silence is the only one tap solution to this problem! Tip: Great for use with camera apps that beep when a photo is taken!</string>
+    <string name="notification_text">All volume levels are 0, tap restore levels</string>
+    <string name="prefName">com.panic.truesilence.prefs</string>
+    <string name="settings_text">Settings</string>
+    <string name="widget_placeholder">
+	<b>Usage</b>\n\n
+	True Silence is a widget not a traditional application. 
+	The icon you clicked will just bring you to this help screen.\n\n 
+	To use True silence properly: press and hold on any home screen, 
+	select widgets, and then pick True Silence from the list.\n\n
+	You should then see a speaker icon w/ no text appear. 
+	Tap it once to silence the phone and again to restore sound.</string>
+</resources>

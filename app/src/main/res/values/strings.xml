@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Copyright (c) 2007-2011 Scott Rahner, Panic Productions, a division N1 Concepts LLC
+ 
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+ 
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+ 
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  
+  http://www.opensource.org/licenses/mit-license.php
+ -->
+
+<resources>    
+    <string name="app_name">True Silence</string>
+    <string name="settings_text">Settings</string>
+    <string name="close_text">Close</string>
+    <string name="notification_text">All volume levels are 0, tap to restore levels</string>
+    <string name="description">A simple widget that lets you COMPLETELY silence your android phone. Many manufacturers do not allow this with all volume streams and many other applications will only let you set one at a time. True Silence is the only one tap solution to this problem!</string>
+	<string name="widget_placeholder">
+	<b>Usage</b>\n\n
+	True Silence is a widget, not a traditional application.
+	The icon you clicked will just bring you to this help screen.\n\n 
+	To use True silence: press and hold on any home screen,
+	select widgets, and then pick True Silence from the list.\n\n
+	You should then see a speaker icon w/ no text appear. 
+	Tap it once to silence the phone and again to restore sound.</string>
+	<string name="prefName">com.panic.truesilence.prefs</string>
+</resources>
