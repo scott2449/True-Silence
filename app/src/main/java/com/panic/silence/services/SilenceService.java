@@ -82,7 +82,7 @@ public class SilenceService extends Service {
 
         RemoteViews views = new RemoteViews(this.getPackageName(), R.layout.silence_widget_layout);
 
-        state.setSilenceState(this, views, isSilent);
+        state.setSilenceState(views, isSilent);
         views.setOnClickPendingIntent(R.id.silence_layout, pendingIntent);
         appWidgetManager.updateAppWidget(widgetIds, views);
 
