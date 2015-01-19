@@ -24,7 +24,7 @@
   http://www.opensource.org/licenses/mit-license.php
  -->
 
-<resources>    
+<resources>
     <string name="app_name">True Silence</string>
     <string name="settings_text">Settings</string>
     <string name="close_text">Close</string>
@@ -38,5 +38,5 @@
 	select widgets, and then pick True Silence from the list.\n\n
 	You should then see a speaker icon w/ no text appear. 
 	Tap it once to silence your device and again to restore sound.</string>
-	<string name="prefName">com.panic.truesilence.prefs</string>
+    <string name="prefName">com.panic.truesilence.prefs</string>
 </resources>

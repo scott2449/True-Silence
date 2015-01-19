@@ -32,14 +32,14 @@ import android.util.Log;
 import com.panic.silence.services.SilenceService;
 
 /**
- * Simple receiver that will handle the boot completed intent and send the intent to 
+ * Simple receiver that will handle the boot completed intent and send the intent to
  * launch SilentService
  */
 public class BootReceiver extends BroadcastReceiver {
- @Override
- public final void onReceive(final Context context, final Intent bootintent) {
-	 Log.i("tsilence", "bootreceiver");
-	 Intent intent = new Intent(context, SilenceService.class);
-	 context.startService(intent);
- }
+    @Override
+    public final void onReceive(final Context context, final Intent bootintent) {
+        Log.i("tsilence", "bootreceiver");
+        Intent intent = new Intent(context, SilenceService.class);
+        context.startService(intent);
+    }
 }

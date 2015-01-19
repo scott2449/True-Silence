@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright (c) 2007-2011 Scott Rahner, Panic Productions, a division N1 Concepts LLC
  
   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,6 +23,7 @@
  -->
 
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-	android:minWidth="72dp" android:minHeight="72dp"
-	android:updatePeriodMillis="0" android:initialLayout="@layout/silence_widget_layout">
-</appwidget-provider>
+    android:initialLayout="@layout/silence_widget_layout"
+    android:minHeight="72dp"
+    android:minWidth="72dp"
+    android:updatePeriodMillis="0"/>

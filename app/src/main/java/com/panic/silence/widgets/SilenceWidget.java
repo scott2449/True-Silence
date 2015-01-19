@@ -37,10 +37,10 @@ import com.panic.R;
 import com.panic.silence.services.SilenceService;
 
 public class SilenceWidget extends AppWidgetProvider {
-	
-	@Override
-	public final void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
-		Log.i("tsilence", "widget");
+
+    @Override
+    public final void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        Log.i("tsilence", "widget");
         for (int appWidgetId : appWidgetIds) {
             Intent intent = new Intent(context, SilenceService.class);
             intent.putExtra("fromWidget", true);
@@ -52,17 +52,17 @@ public class SilenceWidget extends AppWidgetProvider {
 
             appWidgetManager.updateAppWidget(appWidgetId, views);
         }
-		super.onUpdate(context, appWidgetManager, appWidgetIds);
-	}
-	
-	//logic duplicated from ApplicationState because of visibility issues.
-	final void setSilenceIcon(Context context, RemoteViews views){
-		SharedPreferences prefs = context.getApplicationContext().getSharedPreferences(context.getString(R.string.prefName), Context.MODE_PRIVATE);
-		if(prefs.getBoolean("silent",true)){
-			views.setImageViewResource(R.id.ImageView01, R.drawable.sound_icon);
-	    }else{
-	    	views.setImageViewResource(R.id.ImageView01, R.drawable.sound_off_icon);
-	    }
-	}
-	
+        super.onUpdate(context, appWidgetManager, appWidgetIds);
+    }
+
+    //logic duplicated from ApplicationState because of visibility issues.
+    final void setSilenceIcon(Context context, RemoteViews views) {
+        SharedPreferences prefs = context.getApplicationContext().getSharedPreferences(context.getString(R.string.prefName), Context.MODE_PRIVATE);
+        if (prefs.getBoolean("silent", true)) {
+            views.setImageViewResource(R.id.ImageView01, R.drawable.sound_icon);
+        } else {
+            views.setImageViewResource(R.id.ImageView01, R.drawable.sound_off_icon);
+        }
+    }
+
 }

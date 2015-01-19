@@ -32,17 +32,17 @@ import android.view.View;
 import com.panic.R;
 
 public class PlaceholderActivity extends Activity {
-	@Override
-	protected final void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.placeholder);
-	}
+    @Override
+    protected final void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.placeholder);
+    }
 
-	public final void onSettingsClick(View v) {
-		startActivity(new Intent(v.getContext(), SettingsActivity.class));
-	}
-	
-	public final void onCloseClick(View v) {
-		finish();
-	}
+    public final void onSettingsClick(View v) {
+        startActivity(new Intent(v.getContext(), SettingsActivity.class));
+    }
+
+    public final void onCloseClick(View v) {
+        finish();
+    }
 }

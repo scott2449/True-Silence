@@ -24,10 +24,6 @@
 
 package com.panic.silence.services;
 
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-
 import android.app.Service;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -35,36 +31,40 @@ import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
 public class EnforceSilenceService extends Service {
 
-	private ScheduledExecutorService timer;
-	
-	public final int onStartCommand(Intent intent, int flags, int startId) {
-		super.onStartCommand(intent, flags, startId);
-		Log.i("tsilence", "enforce service started");
-		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-		Integer timerPref = Integer.parseInt(prefs.getString("refreshRate", "600"));
-		timer = Executors.newScheduledThreadPool(2);
-		timer.scheduleAtFixedRate(new Runnable() {
-			public void run() {
-				Intent intent = new Intent(getBaseContext(), SilenceService.class);
+    private ScheduledExecutorService timer;
+
+    public final int onStartCommand(Intent intent, int flags, int startId) {
+        super.onStartCommand(intent, flags, startId);
+        Log.i("tsilence", "enforce service started");
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        Integer timerPref = Integer.parseInt(prefs.getString("refreshRate", "600"));
+        timer = Executors.newScheduledThreadPool(2);
+        timer.scheduleAtFixedRate(new Runnable() {
+            public void run() {
+                Intent intent = new Intent(getBaseContext(), SilenceService.class);
                 intent.putExtra("fromEnforce", true);
                 getBaseContext().startService(intent);
-			}
-		}, timerPref, timerPref, TimeUnit.SECONDS);
+            }
+        }, timerPref, timerPref, TimeUnit.SECONDS);
         return START_STICKY;
-	}
+    }
 
-	@Override
-	public final void onDestroy() {
-		Log.i("tsilence", "enforce service destroyed");
-		timer.shutdown();
-		super.onDestroy();
-	}
+    @Override
+    public final void onDestroy() {
+        Log.i("tsilence", "enforce service destroyed");
+        timer.shutdown();
+        super.onDestroy();
+    }
 
-	@Override
-	public final IBinder onBind(Intent intent) {
-		return null;
-	}
+    @Override
+    public final IBinder onBind(Intent intent) {
+        return null;
+    }
 
 }

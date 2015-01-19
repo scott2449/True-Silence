@@ -31,10 +31,10 @@ import com.panic.R;
 
 public class SettingsActivity extends PreferenceActivity {
 
-	@Override
-	protected final void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		addPreferencesFromResource(R.xml.settings);
-	}
+    @Override
+    protected final void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.settings);
+    }
 
 }

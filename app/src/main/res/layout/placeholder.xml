@@ -28,47 +28,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:gravity="center_vertical|center_horizontal"
     android:background="@color/black_trans"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
     android:touchscreenBlocksFocus="false"
     tools:context=".activities.PlaceholderActivity">
 
-  <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:gravity="center_vertical"
-	android:text="@string/widget_placeholder"
-	android:textColor="@color/white"
-	android:textSize="7pt"
-	android:padding="15pt" />
-	
-  <Button
-    android:id="@+id/settings"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/placeholder_button"
-    android:text="@string/settings_text"
-    android:textColor="@color/white"
-    android:textSize="8pt"
-    android:paddingTop="5dip"
-    android:paddingBottom="5dip"
-    android:paddingLeft="30dip"
-    android:paddingRight="30dip"
-    android:onClick="onSettingsClick" android:layout_marginBottom="10dip"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="15pt"
+        android:text="@string/widget_placeholder"
+        android:textColor="@color/white"
+        android:textSize="7pt" />
 
-  <Button
-    android:id="@+id/close"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/placeholder_button"
-    android:text="@string/close_text"
-    android:textColor="@color/white"
-    android:textSize="8pt"
-    android:paddingTop="5dip"
-    android:paddingBottom="5dip"
-    android:paddingLeft="30dip"
-    android:paddingRight="30dip"
-    android:onClick="onCloseClick"/>
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/placeholder_button"
+        android:onClick="onSettingsClick"
+        android:paddingBottom="5dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingTop="5dip"
+        android:text="@string/settings_text"
+        android:textColor="@color/white"
+        android:textSize="8pt" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/placeholder_button"
+        android:onClick="onCloseClick"
+        android:paddingBottom="5dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingTop="5dip"
+        android:text="@string/close_text"
+        android:textColor="@color/white"
+        android:textSize="8pt" />
 
 </LinearLayout>
